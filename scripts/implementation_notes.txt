@@ -1,0 +1,17 @@
+1. phase
+    - ros service for INItial data collection. 
+    - Input PRBS signal to PID controller as addition to persistently excite the system 
+    - full-rank test 
+
+
+2. trigger DeePC controller as trajectory tracker controller 
+
+
+topics:
+pub:
+/red/position_hold/attitude
+    Type: uav_ros_msgs/AttitudeCommand
+
+sub:
+/red/mavros/local_position/odom
+    Type: nav_msgs/Odometry
